@@ -1,11 +1,3 @@
-html {
-  background-image: url('../src/images/backgrounds/main-background.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .masteralb-body {
   font-family: 'Titillium Web', sans-serif;
   max-width: 1024px;
@@ -25,6 +17,8 @@ html {
 .forms-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  grid-gap: 27px;
+  margin-top: 50px;
 
   @include media('≥tablet') {
     grid-template-columns: repeat(2, 1fr);
@@ -32,17 +26,113 @@ html {
 }
 
 .form {
+  margin: 27px;
+  position: relative;
+  background-color: $colorWhite;
+  padding: 14px 18px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(113, 109, 109, 0.5);
+    border: 15px solid rgba(113, 109, 109, 0);
+    border-radius: 5px;
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+  }
+
   &--register {
-    display: flex;
-    flex-direction: column;
     grid-row-start: 1;
     grid-row-end: 3;
   }
 
   &--send-email {
-    display: flex;
-    flex-direction: column;
     grid-row-start: 3;
     grid-row-end: 5;
+  }
+
+  &__title {
+    color: $colorWhite;
+    font-size: 32px;
+    text-shadow: 1px 1.732px 2px rgba(43, 1, 0, 0.75);
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-25%);
+    width: 100%;
+  }
+
+  &__input-wrapper {
+    position: relative;
+    width: 100%;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      background-color: $colorSilverChalice;
+      height: 36px;
+      position: absolute;
+      left: 50px;
+      top: 4px;
+    }
+  }
+  &__input, &__select {
+    height: 40px;
+    margin-bottom: 13px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid $colorSilver;
+    font-size: 16px;
+    color: $colorSilverChalice;;
+    font-weight: 300;
+    padding-left: 60px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: 50%;
+    width: calc(100% - 60px);
+
+    &--user {
+      background-image: url('./../src/images/sprites/user-icon.svg');
+    }
+
+    &--password {
+      background-image: url('./../src/images/sprites/lock-icon.svg');
+    }
+
+    &--email {
+      background-image: url('./../src/images/sprites/mail-icon.svg');
+    }
+
+    &--phone {
+      background-image: url('./../src/images/sprites/phone-icon.svg');
+    }
+  }
+
+  &__select {
+    width: 100%;
+  }
+
+  &__select-option {
+    padding-left: 60px;
+  }
+    
+
+  &__button {
+    height: 48px;
+    border-radius: 3px;
+    text-shadow: 0.5px 0.866px 0px rgba(43, 1, 0, 0.75);
+    background-color: $colorAtlantis;
+    border: 1px solid $colorLimeade;
+    font-size: 24px;
+    font-family: 'Titillium Web', sans-serif;
+    color: $colorWhite;
   }
 }

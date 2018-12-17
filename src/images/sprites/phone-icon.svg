@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 25" width="15" height="25">
+	<defs>
+		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 1 0" /> </filter>
+		<image width="15" height="25" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAZCAYAAADuWXTMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAeUlEQVQ4je2S0QmAMAxEX9R9XMEJ7Epu4Aju4AKO4AiO0BHOnyqCitaCP3pwNKE8coEgCUkADmiBAdCBR6AD3IahDB9HwJmnwOEjwcXeQgFQc189QBYB7PTD34C3F/bu5GIpJNkax0xXffLkpJ3/2JFKip2Ht3rANjOeMVsF03VIngAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="glyphicons_139_phone" style="filter: url(#flt1)" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
