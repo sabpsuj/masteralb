@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <title>Masteralb</title>
 </head>
@@ -11,29 +11,26 @@
   <main class="main-container">
     <img class="main-logo" src="../src/images/masteralb-logo.png" alt="masteralb">
     <div class="forms-container">
-      <form class="form" action="">
+      <form class="form form--register" action="">
         <h2 class="form__title">Register Form</h2>
         <input class="form__input" type="text" placeholder="Username">
         <input class="form__input" type="text" placeholder="Password">
         <input class="form__input" type="text" placeholder="Confirm Password">
         <input class="form__input" type="email" placeholder="Email">
-        <select class="form__select" name="" id=""></select>
+        <select class="form__select" name="" id="">
+          <option value="">Your location</option>
+    <option value="Cracow">Cracow</option>
+    <option value="Warsaw">Warsaw</option>
+    <option value="Wroclaw">Wroclaw</option>
+    <option value="Katowice">Katowice</option>
+    <option value="Lodz">Lodz</option>
+    <option value="Gdansk">Gdansk</option>
+        </select>
         <div class="form__checkbox">
           <input class="form__checkbox-badge" type="checkbox" name="scales">
           <label class="form__checkbox-label" for="scales">I have read and accept the terms of use</label>
         </div>
         <button class="form__button">Sign up</button>
-      </form>
-      <form class="form" action="">
-        <h2 class="form__title">Send Email</h2>
-        <input class="form__input" type="text" placeholder="Your Name">
-        <input class="form__input" type="email" placeholder="Your Email">
-        <textarea class="form__textarea" placeholder="Type your message..."></textarea>
-        <div class="form__checkbox">
-          <input class="form__checkbox-badge" type="checkbox" name="scales">
-          <label class="form__checkbox-label" for="scales">Send copy to my email</label>
-        </div>
-        <button class="form__button">Send Email</button>
       </form>
       <form class="form" action="">
         <h2 class="form__title">Sign In Form</h2>
@@ -44,6 +41,17 @@
           <label class="form__checkbox-label" for="scales">Remember me</label>
         </div>
         <button class="form__button">Sign In</button>
+      </form>
+      <form class="form form--send-email" action="">
+        <h2 class="form__title">Send Email</h2>
+        <input class="form__input" type="text" placeholder="Your Name">
+        <input class="form__input" type="email" placeholder="Your Email">
+        <textarea class="form__textarea" placeholder="Type your message..."></textarea>
+        <div class="form__checkbox">
+          <input class="form__checkbox-badge" type="checkbox" name="scales">
+          <label class="form__checkbox-label" for="scales">Send copy to my email</label>
+        </div>
+        <button class="form__button">Send Email</button>
       </form>
       <form class="form" action="">
         <h2 class="form__title">Recover Form</h2>

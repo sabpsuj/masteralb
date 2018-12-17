@@ -1,0 +1,7 @@
+@function containerWidth($breakpoint) {
+  @if map-has-key($containerWidth, $breakpoint) {
+    @return map-get($containerWidth, $breakpoint);
+  }
+
+  @error('Breakpoint "#{$breakpoint}" does not exist in $containerWidth');
+}

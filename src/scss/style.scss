@@ -1,6 +1,48 @@
-/* very basic style reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  background-image: url('../src/images/backgrounds/main-background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.masteralb-body {
+  font-family: 'Titillium Web', sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-logo {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.forms-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include media('≥tablet') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form {
+  &--register {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  &--send-email {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
 }
