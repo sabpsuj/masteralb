@@ -14,18 +14,23 @@
       <form class="form form--register" action="">
         <h2 class="form__title">Register Form</h2>
         <span class="form__input-wrapper">
+          <div class="form__icon form__icon--user"></div>
           <input class="form__input form__input--user" type="text" placeholder="Username">
         </span>  
         <span class="form__input-wrapper">
+          <div class="form__icon form__icon--password"></div>
           <input class="form__input form__input--password" type="text" placeholder="Password">
         </span>
         <span class="form__input-wrapper">
+          <div class="form__icon form__icon--password"></div>
           <input class="form__input form__input--password" type="text" placeholder="Confirm Password">
         </span>
         <span class="form__input-wrapper">
+            <div class="form__icon form__icon--email"></div>
           <input class="form__input form__input--email" type="email" placeholder="Email">
         </span>
         <span class="form__input-wrapper">
+          <div class="form__icon form__icon--location"></div>
           <select class="form__select" name="" id="">
             <option class="form__select-option" value="">Your location</option>
             <option class="form__select-option" value="Cracow">Cracow</option>
@@ -45,9 +50,11 @@
       <form class="form" action="">
         <h2 class="form__title">Sign In Form</h2>
         <span class="form__input-wrapper">
+            <div class="form__icon form__icon--user"></div>
           <input class="form__input form__input--user" type="text" placeholder="Username">
         </span>
         <span class="form__input-wrapper">
+            <div class="form__icon form__icon--password"></div>
           <input class="form__input form__input--password" type="text" placeholder="Password">
         </span>
         <div class="form__checkbox">
@@ -59,9 +66,11 @@
       <form class="form form--send-email" action="">
         <h2 class="form__title">Send Email</h2>
         <span class="form__input-wrapper">
+          <div class="form__icon form__icon--user"></div>
           <input class="form__input form__input--user" type="text" placeholder="Your Name">
         </span>
         <span class="form__input-wrapper">
+          <div class="form__icon form__icon--email"></div>
           <input class="form__input form__input--email" type="email" placeholder="Your Email">
         </span>
         <textarea class="form__textarea" placeholder="Type your message..."></textarea>
@@ -71,22 +80,25 @@
         </div>
         <button class="form__button">Send Email</button>
       </form>
-      <form class="form" action="">
+      <form class="form form--recover" action="">
         <h2 class="form__title">Recover Form</h2>
         <span class="form__input-wrapper">
+          <div class="form__icon form__icon--email"></div>
           <input class="form__input form__input--email" type="text" placeholder="Enter your Email">
         </span>
         <span class="form__input-wrapper">
+           <div class="form__icon form__icon--phone"></div>
            <input class="form__input form__input--phone" type="text" placeholder="Enter your Phone number">
         </span>
-        <div class="form__buton-wrapper">
+        <div class="form__button-wrapper">
           <button class="form__button">Send</button>
           <button class="form__button form__button--disable">Done</button>
         </div>
       </form>
-      <form class="form" action="">
+      <form class="form form--subscribe" action="">
         <h2 class="form__title">Subscribe Form</h2>
         <span class="form__input-wrapper">
+          <div class="form__icon form__icon--email"></div>
           <input class="form__input form__input--email" type="text" placeholder="Enter your Email">
         </span>
         <div class="form__button-wrapper">
@@ -94,7 +106,9 @@
           <button class="form__button form__button--alt">No, thanks</button>
         </div>
       </form>
-      <img class="main-logo--small" src="../src/images/masteralb-logo-small.png" alt="masteralb">
+      <div class="main-logo__wrapper">
+        <img class="main-logo--small" src="../src/images/masteralb-logo-small.png" alt="masteralb">
+      </div>
     </div>
   </main>
 </body>

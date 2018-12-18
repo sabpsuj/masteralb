@@ -10,8 +10,25 @@
 }
 
 .main-logo {
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 90%;
+  margin: 40px auto;
+  opacity: .4;
+
+  &--small {
+    opacity: .2;
+  }
+
+  @include media('≥tablet') {
+    max-width: 100%;
+  }
+
+  &__wrapper {
+    margin: 0 auto 50px auto;
+
+    @include media('≥tablet') {
+      margin: 0 auto;
+    }
+  }
 }
 
 .forms-container {
@@ -27,12 +44,16 @@
 
 .form {
   margin: 27px;
+  margin-bottom: 50px;
   position: relative;
   background-color: $colorWhite;
-  padding: 14px 18px;
+  padding: 18px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #f4f4f4;
+  height: max-content;
 
   &:before {
     content: '';
@@ -56,6 +77,22 @@
   &--send-email {
     grid-row-start: 3;
     grid-row-end: 5;
+
+    @include media('≥tablet') {
+      margin-top: -27px;
+    }
+  }
+
+  &--subscribe {
+    @include media('≥tablet') {
+      align-self: flex-end;
+    }
+  }
+
+  &--recover {
+    @include media('≥tablet') {
+      margin: 50px 27px 0 27px;
+    }
   }
 
   &__title {
@@ -64,40 +101,30 @@
     text-shadow: 1px 1.732px 2px rgba(43, 1, 0, 0.75);
     position: absolute;
     top: -60px;
-    left: 50%;
-    transform: translateX(-25%);
+    left: 0;
+    text-align: center;
     width: 100%;
   }
 
   &__input-wrapper {
     position: relative;
     width: 100%;
-
-    &:after {
-      content: '';
-      display: block;
-      width: 1px;
-      background-color: $colorSilverChalice;
-      height: 36px;
-      position: absolute;
-      left: 50px;
-      top: 4px;
-    }
-  }
-  &__input, &__select {
     height: 40px;
-    margin-bottom: 13px;
+    display: flex;
+    border: 1px solid #c6c6c6;
+    margin-bottom: 16px;
     border-radius: 3px;
-    background-color: transparent;
-    border: 1px solid $colorSilver;
-    font-size: 16px;
-    color: $colorSilverChalice;;
-    font-weight: 300;
-    padding-left: 60px;
+    box-shadow: 1px 1.732px 0px rgba(174, 164, 164, 0.24);
+    background-color: #f8f8f8;
+  }
+
+  &__icon {
+    width: 60px;
     background-repeat: no-repeat;
-    background-position-x: 15px;
+    background-position-x: 50%;
     background-position-y: 50%;
-    width: calc(100% - 60px);
+    border-right: 1px solid rgba(175, 175, 175, 0.5);
+    margin: 4px 9px 4px 0;
 
     &--user {
       background-image: url('./../src/images/sprites/user-icon.svg');
@@ -114,25 +141,84 @@
     &--phone {
       background-image: url('./../src/images/sprites/phone-icon.svg');
     }
+
+    &--location {
+      background-image: url('./../src/images/sprites/pin-icon.svg');
+    }
   }
 
-  &__select {
-    width: 100%;
+  &__input, &__select {
+    background-color: transparent;
+    border: none;
+    width: calc(100% - 60px);
+    font-size: 16px;
+    color: $colorSilverChalice;
+    font-weight: 300;
+    padding-left: 9px;
   }
 
-  &__select-option {
-    padding-left: 60px;
+  &__input::placeholder {
+    font-size: 16px;
+    color: $colorSilverChalice;
+    font-weight: 300;
   }
-    
+
+  &__button-wrapper {
+    display: flex;
+  }
 
   &__button {
     height: 48px;
     border-radius: 3px;
     text-shadow: 0.5px 0.866px 0px rgba(43, 1, 0, 0.75);
-    background-color: $colorAtlantis;
+    background: linear-gradient($colorAtlantis, $colorLimeade);
     border: 1px solid $colorLimeade;
+    box-shadow: 0.5px 0.866px 0px $colorWhite;
     font-size: 24px;
     font-family: 'Titillium Web', sans-serif;
     color: $colorWhite;
+    width: 100%;
+
+    &--alt {
+      box-shadow: 0.5px 0.866px 0px #ffffff;
+      background: linear-gradient(#f4495b, #a2202a);
+      border: 1px solid #a2202a;
+      margin-left: 30px;
+    }
+
+    &--disable {
+      background: linear-gradient(#bcdb97, #90ca6d);
+      border: 1px solid #90ca6d;
+      margin-left: 30px;
+    }
   }
+
+  &__checkbox {
+    margin-bottom: 16px;
+  }
+
+  &__checkbox-label {
+    font-size: 17px;
+    color: $colorSilverChalice;
+  }
+
+  //place fo checkbox styling
+
+  &__textarea {
+    resize: none;
+    height: 230px;
+    border: 1px solid #c6c6c6;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    box-shadow: 1px 1.732px 0px rgba(174, 164, 164, 0.24);
+    background-color: #f8f8f8;
+    padding: 9px;
+  }
+
+  &__textarea::placeholder {
+    font-size: 16px;
+    color: $colorSilverChalice;
+    font-weight: 300;
+  }
+
 }
