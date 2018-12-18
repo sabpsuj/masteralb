@@ -43,6 +43,8 @@
 }
 
 .form {
+  $root: &;
+
   margin: 27px;
   margin-bottom: 50px;
   position: relative;
@@ -193,16 +195,45 @@
     }
   }
 
-  &__checkbox {
-    margin-bottom: 16px;
-  }
-
   &__checkbox-label {
     font-size: 17px;
     color: $colorSilverChalice;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
   }
 
-  //place fo checkbox styling
+  &__checkbox-badge {
+    opacity: 0;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    z-index: 1;
+  }
+
+  &__checkbox-indicator {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 13px;
+      border-radius: 3px;
+      transform: translateY(35%) translateX(35%);
+
+      #{$root}__checkbox-badge:checked + & {
+        background-color: #90ca6d;
+      }
+    }
+  }
+
+  &__checkbox-label-text {
+    margin-left: 10px;
+  }
 
   &__textarea {
     resize: none;

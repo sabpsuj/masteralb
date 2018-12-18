@@ -19,11 +19,11 @@
         </span>  
         <span class="form__input-wrapper">
           <div class="form__icon form__icon--password"></div>
-          <input class="form__input form__input--password" type="text" placeholder="Password">
+          <input class="form__input form__input--password" type="password" placeholder="Password">
         </span>
         <span class="form__input-wrapper">
           <div class="form__icon form__icon--password"></div>
-          <input class="form__input form__input--password" type="text" placeholder="Confirm Password">
+          <input class="form__input form__input--password" type="password" placeholder="Confirm Password">
         </span>
         <span class="form__input-wrapper">
             <div class="form__icon form__icon--email"></div>
@@ -41,10 +41,11 @@
             <option class="form__select-option" value="Gdansk">Gdansk</option>
           </select>
         </span>
-        <div class="form__checkbox">
+        <label class="form__checkbox-label" for="scales">
           <input class="form__checkbox-badge" type="checkbox" name="scales">
-          <label class="form__checkbox-label" for="scales">I have read and accept the terms of use</label>
-        </div>
+          <span class="form__checkbox-indicator"></span>
+          <span class="form__checkbox-label-text" for="scales">I have read and accept the terms of use</span>
+        </label>
         <button class="form__button">Sign up</button>
       </form>
       <form class="form" action="">
@@ -55,12 +56,13 @@
         </span>
         <span class="form__input-wrapper">
             <div class="form__icon form__icon--password"></div>
-          <input class="form__input form__input--password" type="text" placeholder="Password">
+          <input class="form__input form__input--password" type="password" placeholder="Password">
         </span>
-        <div class="form__checkbox">
-          <input class="form__checkbox-badge" type="checkbox" name="scales">
-          <label class="form__checkbox-label" for="scales">Remember me</label>
-        </div>
+        <label class="form__checkbox-label" for="scales">
+            <input class="form__checkbox-badge" type="checkbox" name="scales">
+            <span class="form__checkbox-indicator"></span>
+            <span class="form__checkbox-label-text" for="scales">Remember me</span>
+        </label>
         <button class="form__button">Sign In</button>
       </form>
       <form class="form form--send-email" action="">
@@ -74,10 +76,11 @@
           <input class="form__input form__input--email" type="email" placeholder="Your Email">
         </span>
         <textarea class="form__textarea" placeholder="Type your message..."></textarea>
-        <div class="form__checkbox">
-          <input class="form__checkbox-badge" type="checkbox" name="scales">
-          <label class="form__checkbox-label" for="scales">Send copy to my email</label>
-        </div>
+        <label class="form__checkbox-label" for="scales">
+            <input class="form__checkbox-badge" type="checkbox" name="scales">
+            <span class="form__checkbox-indicator"></span>
+            <span class="form__checkbox-label-text" for="scales">Send copy to my email</span>
+        </label>
         <button class="form__button">Send Email</button>
       </form>
       <form class="form form--recover" action="">
