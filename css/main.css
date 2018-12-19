@@ -4,38 +4,41 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center; }
-  .malb__body {
+  .malb-body {
     font-family: 'Titillium Web', sans-serif;
     max-width: 1024px;
     margin: 0 auto; }
-  .malb__main-container {
+  .malb-main-container {
     display: flex;
     flex-direction: column; }
-  .malb__main-logo {
+  .malb-main-logo {
     max-width: 90%;
     margin: 40px auto;
     opacity: .4; }
-    .malb__main-logo--small {
+    .malb-main-logo--small {
       opacity: .2; }
     @media (min-width: 768px) {
-      .malb__main-logo {
+      .malb-main-logo {
         max-width: 100%; } }
-    .malb__main-logo__wrapper {
+    .malb-main-logo__wrapper {
       margin: 0 auto 50px auto; }
       @media (min-width: 768px) {
-        .malb__main-logo__wrapper {
+        .malb-main-logo__wrapper {
           margin: 0 auto; } }
-  .malb__forms-container {
+  @media (min-width: 768px) {
+    .malb-grid-img {
+      grid-area: img; } }
+  .malb-forms-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 27px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-bottom: 50px; }
     @media (min-width: 768px) {
-      .malb__forms-container {
-        grid-template-columns: repeat(2, 1fr); } }
-  .malb__form {
+      .malb-forms-container {
+        grid-template: "register-f signin-f" "register-f ." "register-f recover-f" ". recover-f" "send-f recover-f" "send-f ." "send-f sub-f" "send-f img"; } }
+  .malb-form {
     margin: 27px;
-    margin-bottom: 50px;
     position: relative;
     background-color: #ffffff;
     padding: 18px;
@@ -45,7 +48,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: #f4f4f4;
     height: max-content; }
-    .malb__form:before {
+    .malb-form:before {
       content: '';
       display: block;
       position: absolute;
@@ -57,22 +60,22 @@
       top: -15px;
       left: -15px;
       z-index: -1; }
-    .malb__form--register {
-      grid-row-start: 1;
-      grid-row-end: 3; }
-    .malb__form--send-email {
-      grid-row-start: 3;
-      grid-row-end: 5; }
-      @media (min-width: 768px) {
-        .malb__form--send-email {
-          margin-top: -27px; } }
     @media (min-width: 768px) {
-      .malb__form--subscribe {
-        align-self: flex-end; } }
+      .malb-form--register {
+        grid-area: register-f; } }
     @media (min-width: 768px) {
-      .malb__form--recover {
-        margin: 50px 27px 0 27px; } }
-  .malb__form-title {
+      .malb-form--send-email {
+        grid-area: send-f; } }
+    @media (min-width: 768px) {
+      .malb-form--sign-in {
+        grid-area: signin-f; } }
+    @media (min-width: 768px) {
+      .malb-form--subscribe {
+        grid-area: sub-f; } }
+    @media (min-width: 768px) {
+      .malb-form--recover {
+        grid-area: recover-f; } }
+  .malb-form-title {
     color: #ffffff;
     font-size: 32px;
     text-shadow: 1px 1.732px 2px rgba(43, 1, 0, 0.75);
@@ -81,7 +84,7 @@
     left: 0;
     text-align: center;
     width: 100%; }
-  .malb__form-input-wrapper {
+  .malb-form-input-wrapper {
     position: relative;
     width: 100%;
     height: 40px;
@@ -91,24 +94,24 @@
     border-radius: 3px;
     box-shadow: 1px 1.732px 0px rgba(174, 164, 164, 0.24);
     background-color: #f8f8f8; }
-  .malb__form-icon {
+  .malb-form-icon {
     width: 60px;
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
     border-right: 1px solid rgba(175, 175, 175, 0.5);
     margin: 4px 9px 4px 0; }
-    .malb__form-icon--user {
+    .malb-form-icon--user {
       background-image: url("./../src/images/sprites/user-icon.svg"); }
-    .malb__form-icon--password {
+    .malb-form-icon--password {
       background-image: url("./../src/images/sprites/lock-icon.svg"); }
-    .malb__form-icon--email {
+    .malb-form-icon--email {
       background-image: url("./../src/images/sprites/mail-icon.svg"); }
-    .malb__form-icon--phone {
+    .malb-form-icon--phone {
       background-image: url("./../src/images/sprites/phone-icon.svg"); }
-    .malb__form-icon--location {
+    .malb-form-icon--location {
       background-image: url("./../src/images/sprites/pin-icon.svg"); }
-  .malb__form-input, .malb__form-select {
+  .malb-form-input, .malb-form-select {
     background-color: transparent;
     border: none;
     width: calc(100% - 60px);
@@ -116,13 +119,13 @@
     color: #afafaf;
     font-weight: 300;
     padding-left: 9px; }
-  .malb__form-input::placeholder {
+  .malb-form-input::placeholder {
     font-size: 16px;
     color: #afafaf;
     font-weight: 300; }
-  .malb__form-button-wrapper {
+  .malb-form-button-wrapper {
     display: flex; }
-  .malb__form-button {
+  .malb-form-button {
     height: 48px;
     border-radius: 3px;
     cursor: pointer;
@@ -134,46 +137,46 @@
     font-family: 'Titillium Web', sans-serif;
     color: #ffffff;
     width: 100%; }
-    .malb__form-button--alt {
+    .malb-form-button--alt {
       box-shadow: 0.5px 0.866px 0px #ffffff;
       background: linear-gradient(#f4495b, #a2202a);
       border: 1px solid #a2202a;
       margin-left: 30px; }
-    .malb__form-button--disable {
+    .malb-form-button--disable {
       background: linear-gradient(#bcdb97, #90ca6d);
       border: 1px solid #90ca6d;
       margin-left: 30px; }
-  .malb__form-checkbox-label {
+  .malb-form-checkbox-label {
     font-size: 17px;
     color: #afafaf;
     margin-bottom: 16px;
     display: flex;
     align-items: center; }
-  .malb__form-checkbox-badge {
+  .malb-form-checkbox-badge {
     opacity: 0;
     position: absolute;
     width: 23px;
     height: 23px;
     z-index: 1; }
-  .malb__form-checkbox-indicator {
+  .malb-form-checkbox-indicator {
     width: 23px;
     height: 23px;
     border: 1px solid #c6c6c6;
     border-radius: 3px; }
-    .malb__form-checkbox-indicator:before {
+    .malb-form-checkbox-indicator:before {
       content: '';
       display: block;
       width: 13px;
       height: 13px;
       border-radius: 3px;
       transform: translateY(35%) translateX(35%); }
-      .malb__form-checkbox-badge:checked + .malb__form-checkbox-indicator:before {
+      .malb__form-checkbox-badge:checked + .malb-form-checkbox-indicator:before {
         background-color: #90ca6d; }
-  .malb__form-checkbox-label-text {
+  .malb-form-checkbox-label-text {
     margin-left: 10px; }
-  .malb__form-textarea-wrapper {
+  .malb-form-textarea-wrapper {
     display: flex; }
-  .malb__form-textarea {
+  .malb-form-textarea {
     resize: none;
     height: 230px;
     border: 1px solid #c6c6c6;
@@ -186,10 +189,25 @@
     color: #afafaf;
     font-weight: 300;
     width: 100%; }
-  .malb__form-textarea::placeholder {
+  .malb-form-textarea::placeholder {
     font-size: 16px;
     color: #afafaf;
     font-weight: 300; }
+  .malb-form-icon-tooltip {
+    display: none;
+    box-shadow: 1px 1.732px 0px rgba(174, 164, 164, 0.24);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    opacity: .9;
+    position: absolute;
+    padding: 20px 15px;
+    text-align: center;
+    width: 50%;
+    z-index: 10; }
+    .malb__form-icon:hover .malb-form-icon-tooltip {
+      display: block; }
+  .malb-form-icon-tooltip {
+    color: #8ac766; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

@@ -7,18 +7,18 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &__body {
+  &-body {
     font-family: 'Titillium Web', sans-serif;
     max-width: 1024px;
     margin: 0 auto;
   }
   
-  &__main-container {
+  &-main-container {
     display: flex;
     flex-direction: column;
   }
   
-  &__main-logo {
+  &-main-logo {
     max-width: 90%;
     margin: 40px auto;
     opacity: .4;
@@ -39,21 +39,34 @@
       }
     }
   }
-  
-  &__forms-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 27px;
-    margin-top: 50px;
-  
+
+  &-grid-img {
     @include media('≥tablet') {
-      grid-template-columns: repeat(2, 1fr);
+     grid-area: img; 
     }
   }
   
-  &__form {
-    margin: 27px;
+  &-forms-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 27px;
+    margin-top: 50px;
     margin-bottom: 50px;
+  
+    @include media('≥tablet') {
+       grid-template: "register-f signin-f"
+                 "register-f ."
+                 "register-f recover-f"
+                 ". recover-f"
+                 "send-f recover-f"
+                 "send-f ."
+                 "send-f sub-f"
+                 "send-f img"
+    }
+  }
+  
+  &-form {
+    margin: 27px;
     position: relative;
     background-color: $colorWhite;
     padding: 18px;
@@ -79,33 +92,37 @@
     }
   
     &--register {
-      grid-row-start: 1;
-      grid-row-end: 3;
+      @include media('≥tablet') {
+        grid-area: register-f;
+      }      
     }
   
     &--send-email {
-      grid-row-start: 3;
-      grid-row-end: 5;
-  
       @include media('≥tablet') {
-        margin-top: -27px;
+        grid-area: send-f;
       }
     }
   
+    &--sign-in {
+      @include media('≥tablet') {
+        grid-area: signin-f;
+      }
+    }
+
     &--subscribe {
       @include media('≥tablet') {
-        align-self: flex-end;
+        grid-area: sub-f;
       }
     }
   
     &--recover {
       @include media('≥tablet') {
-        margin: 50px 27px 0 27px;
+        grid-area: recover-f;
       }
     }
   }
 
-  &__form-title {
+  &-form-title {
     color: $colorWhite;
     font-size: 32px;
     text-shadow: 1px 1.732px 2px rgba(43, 1, 0, 0.75);
@@ -116,7 +133,7 @@
     width: 100%;
   }
 
-  &__form-input-wrapper {
+  &-form-input-wrapper {
     position: relative;
     width: 100%;
     height: 40px;
@@ -128,7 +145,7 @@
     background-color: #f8f8f8;
   }
 
-  &__form-icon {
+  &-form-icon {
     width: 60px;
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -157,7 +174,7 @@
     }
   }
 
-  &__form-input, &__form-select {
+  &-form-input, &-form-select {
     background-color: transparent;
     border: none;
     width: calc(100% - 60px);
@@ -167,17 +184,17 @@
     padding-left: 9px;
   }
 
-  &__form-input::placeholder {
+  &-form-input::placeholder {
     font-size: 16px;
     color: $colorSilverChalice;
     font-weight: 300;
   }
 
-  &__form-button-wrapper {
+  &-form-button-wrapper {
     display: flex;
   }
 
-  &__form-button {
+  &-form-button {
     height: 48px;
     border-radius: 3px;
     cursor: pointer;
@@ -204,7 +221,7 @@
     }
   }
 
-  &__form-checkbox-label {
+  &-form-checkbox-label {
     font-size: 17px;
     color: $colorSilverChalice;
     margin-bottom: 16px;
@@ -212,7 +229,7 @@
     align-items: center;
   }
 
-  &__form-checkbox-badge {
+  &-form-checkbox-badge {
     opacity: 0;
     position: absolute;
     width: 23px;
@@ -220,7 +237,7 @@
     z-index: 1;
   }
 
-  &__form-checkbox-indicator {
+  &-form-checkbox-indicator {
     width: 23px;
     height: 23px;
     border: 1px solid #c6c6c6;
@@ -240,15 +257,15 @@
     }
   }
 
-  &__form-checkbox-label-text {
+  &-form-checkbox-label-text {
     margin-left: 10px;
   }
 
-  &__form-textarea-wrapper {
+  &-form-textarea-wrapper {
     display: flex;
   }
 
-  &__form-textarea {
+  &-form-textarea {
     resize: none;
     height: 230px;
     border: 1px solid #c6c6c6;
@@ -263,10 +280,33 @@
     width: 100%;
   }
 
-  &__form-textarea::placeholder {
+  &-form-textarea::placeholder {
     font-size: 16px;
     color: $colorSilverChalice;
     font-weight: 300;
+  }
+
+  //Tooltips
+
+  &-form-icon-tooltip {
+    display: none;
+    box-shadow: 1px 1.732px 0px rgba(174, 164, 164, 0.24);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    opacity: .9;
+    position: absolute;
+    padding: 20px 15px;
+    text-align: center;
+    width: 50%;
+    z-index: 10;
+
+    #{$root}__form-icon:hover &{
+      display: block;
+    }
+  }
+
+  &-form-icon-tooltip { 
+    color: darken(#90ca6d, 2);
   }
 }
 

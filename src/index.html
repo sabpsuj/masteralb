@@ -7,122 +7,140 @@
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <title>Masteralb</title>
 </head>
-<body class="malb__body">
-  <main class="malb__main-container">
-    <img class="malb__main-logo" src="../src/images/masteralb-logo.png" alt="masteralb">
-    <div class="malb__forms-container">
-      <form class="malb__form malb__form--register" action="">
+<body class="malb-body">
+  <main class="malb-main-container">
+    <img class="malb-main-logo" src="../src/images/masteralb-logo.png" alt="masteralb">
+    <div class="malb-forms-container">
+      <form class="malb-form malb-form--register" action="">
         <fieldset>
-          <legend class="malb__form-title">Register Form</legend>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--user"></div>
-            <input class="malb__form-input malb__form-input--user" type="text" placeholder="Username">
+          <legend class="malb-form-title">Register Form</legend>
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--user">
+              <div class="malb-form-icon-tooltip">
+                <p class="malb-form-icon-tooltip-text">
+                  Your name must contain at least 2 letters.
+                </p>
+              </div>
+            </div>
+            <input class="malb-form-input malb-form-input--user" type="text" placeholder="Username">
           </div>  
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--password"></div>
-            <input class="malb__form-input malb__form-input--password" type="password" placeholder="Password">
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--password"></div>
+            <input class="malb-form-input malb-form-input--password" type="password" placeholder="Password">
           </div>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--password"></div>
-            <input class="malb__form-input malb__form-input--password" type="password" placeholder="Confirm Password">
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--password"></div>
+            <input class="malb-form-input malb-form-input--password" type="password" placeholder="Confirm Password">
           </div>
-          <div class="malb__form-input-wrapper">
-              <div class="malb__form-icon malb__form-icon--email"></div>
-            <input class="malb__form-input malb__form-input--email" type="email" placeholder="Email">
+          <div class="malb-form-input-wrapper">
+              <div class="malb-form-icon malb-form-icon--email"></div>
+            <input class="malb-form-input malb-form-input--email" type="email" placeholder="Email">
           </div>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--location"></div>
-            <select class="malb__form-select" name="" id="">
-              <option class="malb__form-select-option" value="">Your location</option>
-              <option class="malb__form-select-option" value="Cracow">Cracow</option>
-              <option class="malb__form-select-option" value="Warsaw">Warsaw</option>
-              <option class="malb__form-select-option" value="Wroclaw">Wroclaw</option>
-              <option class="malb__form-select-option" value="Katowice">Katowice</option>
-              <option class="malb__form-select-option" value="Lodz">Lodz</option>
-              <option class="malb__form-select-option" value="Gdansk">Gdansk</option>
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--location"></div>
+            <select class="malb-form-select" name="" id="">
+              <option class="malb-form-select-option" value="">Your location</option>
+              <option class="malb-form-select-option" value="Cracow">Cracow</option>
+              <option class="malb-form-select-option" value="Warsaw">Warsaw</option>
+              <option class="malb-form-select-option" value="Wroclaw">Wroclaw</option>
+              <option class="malb-form-select-option" value="Katowice">Katowice</option>
+              <option class="malb-form-select-option" value="Lodz">Lodz</option>
+              <option class="malb-form-select-option" value="Gdansk">Gdansk</option>
             </select>
           </div>
-          <label class="malb__form-checkbox-label" id="scales">
-            <input class="malb__form-checkbox-badge" type="checkbox" for="scales">
-            <span class="malb__form-checkbox-indicator"></span>
-            <span class="malb__form-checkbox-label-text" for="scales">I have read and accept the terms of use</span>
+          <label class="malb-form-checkbox-label" id="scales">
+            <input class="malb-form-checkbox-badge" type="checkbox" for="scales">
+            <span class="malb-form-checkbox-indicator"></span>
+            <span class="malb-form-checkbox-label-text" for="scales">I have read and accept the terms of use</span>
           </label>
-          <button class="malb__form-button">Sign up</button>
+          <button class="malb-form-button">Sign up</button>
         </fieldset>
       </form>
-      <form class="malb__form" action="">
+      <form class="malb-form malb-form--sign-in" action="">
         <fieldset>
-          <legend class="malb__form-title">Sign In Form</legend>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--user"></div>
-            <input class="malb__form-input malb__form-input--user" type="text" placeholder="Username">
+          <legend class="malb-form-title">Sign In Form</legend>
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--user">
+              <div class="malb-form-icon-tooltip">
+                <p class="malb-form-icon-tooltip-text">
+                  Your name must contain at least 2 letters.
+                </p>
+              </div>
+            </div>
+            <input class="malb-form-input malb-form-input--user" type="text" placeholder="Username">
           </div>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--password"></div>
-            <input class="malb__form-input malb__form-input--password" type="password" placeholder="Password">
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--password"></div>
+            <input class="malb-form-input malb-form-input--password" type="password" placeholder="Password">
           </div>
-          <label class="malb__form-checkbox-label" id="scales">
-              <input class="malb__form-checkbox-badge" type="checkbox" for="scales">
-              <span class="malb__form-checkbox-indicator"></span>
-              <span class="malb__form-checkbox-label-text" for="scales">Remember me</span>
+          <label class="malb-form-checkbox-label" id="scales">
+              <input class="malb-form-checkbox-badge" type="checkbox" for="scales">
+              <span class="malb-form-checkbox-indicator"></span>
+              <span class="malb-form-checkbox-label-text" for="scales">Remember me</span>
           </label>
-          <button class="malb__form-button">Sign In</button>
+          <button class="malb-form-button">Sign In</button>
         </fieldset>
       </form>
-      <form class="malb__form malb__form--send-email" action="">
+      <form class="malb-form malb-form--send-email" action="">
         <fieldset>
-          <legend class="malb__form-title">Send Email</legend>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--user"></div>
-            <input class="malb__form-input malb__form-input--user" type="text" placeholder="Your Name">
+          <legend class="malb-form-title">Send Email</legend>
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--user">
+              <div class="malb-form-icon-tooltip">
+                <p class="malb-form-icon-tooltip-text">
+                  Your name must contain at least 2 letters.
+                </p>
+              </div>
+            </div>
+            <input class="malb-form-input malb-form-input--user" type="text" placeholder="Your Name">
           </div>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--email"></div>
-            <input class="malb__form-input malb__form-input--email" type="email" placeholder="Your Email">
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--email"></div>
+            <input class="malb-form-input malb-form-input--email" type="email" placeholder="Your Email">
           </div>
-          <div class="malb__form-textarea-wrapper">
-            <textarea class="malb__form-textarea" placeholder="Type your message..."></textarea>
+          <div class="malb-form-textarea-wrapper">
+            <textarea class="malb-form-textarea" placeholder="Type your message..."></textarea>
           </div>
-          <label class="malb__form-checkbox-label" id="scales">
-              <input class="malb__form-checkbox-badge" type="checkbox" for="scales">
-              <span class="malb__form-checkbox-indicator"></span>
-              <span class="malb__form-checkbox-label-text" for="scales">Send copy to my email</span>
+          <label class="malb-form-checkbox-label" id="scales">
+              <input class="malb-form-checkbox-badge" type="checkbox" for="scales">
+              <span class="malb-form-checkbox-indicator"></span>
+              <span class="malb-form-checkbox-label-text" for="scales">Send copy to my email</span>
           </label>
-          <button class="malb__form-button">Send Email</button>
+          <button class="malb-form-button">Send Email</button>
         </fieldset>
       </form>
-      <form class="malb__form malb__form--recover" action="">
+      <form class="malb-form malb-form--recover" action="">
         <fieldset>
-          <legend class="malb__form-title">Recover Form</legend>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--email"></div>
-            <input class="malb__form-input malb__form-input--email" type="text" placeholder="Enter your Email">
+          <legend class="malb-form-title">Recover Form</legend>
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon mal-_form-icon--email"></div>
+            <input class="malb-form-input malb-form-input--email" type="text" placeholder="Enter your Email">
           </div>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--phone"></div>
-            <input class="malb__form-input malb__form-input--phone" type="text" placeholder="Enter your Phone number">
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--phone"></div>
+            <input class="malb-form-input malb-form-input--phone" type="text" placeholder="Enter your Phone number">
           </div>
-          <div class="malb__form-button-wrapper">
-            <button class="malb__form-button">Send</button>
-            <button class="malb__form-button malb__form-button--disable">Done</button>
+          <div class="malb-form-button-wrapper">
+            <button class="malb-form-button">Send</button>
+            <button class="malb-form-button malb-form-button--disable">Done</button>
           </div>
         </fieldset>
       </form>
-      <form class="malb__form malb__form--subscribe" action="">
+      <form class="malb-form malb-form--subscribe" action="">
         <fieldset>
-          <legend class="malb__form-title">Subscribe Form</legend>
-          <div class="malb__form-input-wrapper">
-            <div class="malb__form-icon malb__form-icon--email"></div>
-            <input class="malb__form-input malb__form-input--email" type="text" placeholder="Enter your Email">
+          <legend class="malb-form-title">Subscribe Form</legend>
+          <div class="malb-form-input-wrapper">
+            <div class="malb-form-icon malb-form-icon--email"></div>
+            <input class="malb-form-input malb-form-input--email" type="text" placeholder="Enter your Email">
           </div>
-          <div class="malb__form-button-wrapper">
-            <button class="malb__form-button">Subscribe</button>
-            <button class="malb__form-button malb__form-button--alt">No, thanks</button>
+          <div class="malb-form-button-wrapper">
+            <button class="malb-form-button">Subscribe</button>
+            <button class="malb-form-button malb-form-button--alt">No, thanks</button>
           </div>
         </fieldset>
       </form>
-      <div class="malb__main-logo__wrapper">
-        <img class="malb__main-logo--small" src="../src/images/masteralb-logo-small.png" alt="masteralb">
+      <div class="malb-main-logo__wrapper malb-grid-img">
+        <img class="malb-main-logo--small" src="../src/images/masteralb-logo-small.png" alt="masteralb">
       </div>
     </div>
   </main>
