@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 26" width="21" height="26">
-	<defs>
-		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 1 0" /> </filter>
-		<image width="21" height="26" id="img1" style="fill: #dedede;" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAaCAYAAABYQRdDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAx0lEQVRIie2VwQ2DMAxFX7pAOkI3YARGYgRG6AgdhVHoBhnBPWAkMCkxET1U7Ze+AMV+xAkOiAhLAxF4AAmQHSeNixuGATYOmPUINFmoznA8CFyCYw7aVwJn9zmoLXsAWrteGtvq+GqNc1D75izQgFc581jQAEII041KRAIFvcu5lBJr9OPQwLRzp+p7yj8CfR4Bl3o6oacQ/lOsGDCY9rQ9v7Gn/Fvhuap8ATqdZeeJ927U1Vx39ZFPCnzlJ+CO8//1b9Pz9QICjy345QcwjwAAAABJRU5ErkJggg=="/>
-	</defs>
-	<use id="glyphicons_203_lock" fill="#dedede" style="filter: url(#flt1);" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="26"><defs><filter id="b"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.871 0 0 0 0 0.871 0 0 0 0 0.871 0 0 0 1 0"/></filter><image id="a" width="21" height="26" fill="#dedede" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAaCAYAAABYQRdDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAx0lEQVRIie2VwQ2DMAxFX7pAOkI3YARGYgRG6AgdhVHoBhnBPWAkMCkxET1U7Ze+AMV+xAkOiAhLAxF4AAmQHSeNixuGATYOmPUINFmoznA8CFyCYw7aVwJn9zmoLXsAWrteGtvq+GqNc1D75izQgFc581jQAEII041KRAIFvcu5lBJr9OPQwLRzp+p7yj8CfR4Bl3o6oacQ/lOsGDCY9rQ9v7Gn/Fvhuap8ATqdZeeJ927U1Vx39ZFPCnzlJ+CO8//1b9Pz9QICjy345QcwjwAAAABJRU5ErkJggg=="/></defs><use fill="#dedede" filter="url(#b)" href="#a"/></svg>

@@ -236,6 +236,10 @@
     margin-left: 10px;
   }
 
+  &__textarea-wrapper {
+    display: flex;
+  }
+
   &__textarea {
     resize: none;
     height: 230px;
@@ -248,6 +252,7 @@
     font-size: 16px;
     color: $colorSilverChalice;
     font-weight: 300;
+    width: 100%;
   }
 
   &__textarea::placeholder {

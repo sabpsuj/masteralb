@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" width="24" height="16">
-	<defs>
-		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 1 0" /> </filter>
-		<image width="24" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAe0lEQVQ4jb2UWwrAIAwEh960J4s33f6IVGzT+GpAEF13DMYAGKBNw5DEJohl7zJZCbl7NgsrzYWzscK8AsxC3s6GhSPmj4BeiKs9cELSCSRHkrLGDe9G3u2ius90Z9bCZTqSVQWIPKpJirSW5qN1VUxUVzx/aXYbzAvkAnZGmOKp6vzRAAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="glyphicons_010_envelope" style="filter: url(#flt1)" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><defs><filter id="flt1"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.871 0 0 0 0 0.871 0 0 0 0 0.871 0 0 0 1 0"/></filter><image id="img1" width="24" height="16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAe0lEQVQ4jb2UWwrAIAwEh960J4s33f6IVGzT+GpAEF13DMYAGKBNw5DEJohl7zJZCbl7NgsrzYWzscK8AsxC3s6GhSPmj4BeiKs9cELSCSRHkrLGDe9G3u2ius90Z9bCZTqSVQWIPKpJirSW5qN1VUxUVzx/aXYbzAvkAnZGmOKp6vzRAAAAAElFTkSuQmCC"/></defs><use id="glyphicons_010_envelope" filter="url(#flt1)" href="#img1"/></svg>

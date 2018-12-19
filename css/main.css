@@ -169,6 +169,8 @@
         background-color: #90ca6d; }
   .form__checkbox-label-text {
     margin-left: 10px; }
+  .form__textarea-wrapper {
+    display: flex; }
   .form__textarea {
     resize: none;
     height: 230px;
@@ -180,7 +182,8 @@
     padding: 9px;
     font-size: 16px;
     color: #afafaf;
-    font-weight: 300; }
+    font-weight: 300;
+    width: 100%; }
   .form__textarea::placeholder {
     font-size: 16px;
     color: #afafaf;

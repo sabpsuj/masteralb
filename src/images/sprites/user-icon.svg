@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 22" width="23" height="22">
-	<defs>
-		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 1 0" /> </filter>
-		<image width="23" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArklEQVQ4jd2U0QkCMRBE39hASrCUK0U70A5SypWUEq6EK2H9MILEZHN4J0IGBgKbfbuQMJgZnoEJSIC9OQFTt3cD2By7A3rwcuPSyetXhlQlqV3MMjO1aqde8x4NCJd03gv/64PeO/WrV3Q3B397b2sY9bcESdFrlhQlheaFSp4EIAIrfq68vOb7wQ0u4AIsG6G1IbcPOM9o/RZaeiFHMcB8ELT0rHz4iQb850foAVTnJYG+BTD3AAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="glyphicons_003_user" style="filter: url(#flt1)" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="22"><defs><filter id="flt1"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.871 0 0 0 0 0.871 0 0 0 0 0.871 0 0 0 1 0"/></filter><image id="img1" width="23" height="22" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArklEQVQ4jd2U0QkCMRBE39hASrCUK0U70A5SypWUEq6EK2H9MILEZHN4J0IGBgKbfbuQMJgZnoEJSIC9OQFTt3cD2By7A3rwcuPSyetXhlQlqV3MMjO1aqde8x4NCJd03gv/64PeO/WrV3Q3B397b2sY9bcESdFrlhQlheaFSp4EIAIrfq68vOb7wQ0u4AIsG6G1IbcPOM9o/RZaeiFHMcB8ELT0rHz4iQb850foAVTnJYG+BTD3AAAAAElFTkSuQmCC"/></defs><use id="glyphicons_003_user" filter="url(#flt1)" href="#img1"/></svg>

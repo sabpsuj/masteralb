@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 24" width="15" height="24">
-	<defs>
-		<filter id="flt1"> <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 0 0.871   0 0 0 1 0" /> </filter>
-		<image width="15" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAYCAYAAAAlBadpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA60lEQVQ4jZWUURGDMAyGP3Z7rwQkTEInYQ6QgAQkbA6Qwk0BEpgDJGQPa7kuJFzpXV7SfPlDkoKIkA1ogRFYAClsAroyVkQowU4Blk1A+IMrwWxzTpBLrQWzjRkejcslVROde0mirAYYVCN7A+4xnLuupgR6AsOF/fkYPtNvwQ/taJomAHcr43RUOhD4jUfHRPBnPKfEuqECLHlUwQk4sr7csOEEuJI3rPiuWvXBehg16puqhmt2/Gk+yZTA2+Ntn4/gI/XR/RlUqLc18K1G1YRTAr2ytzNwLMDJinFhpR69mCv+eQGIyNsL+AIpSOyvg7ry+AAAAABJRU5ErkJggg=="/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="glyphicons_242_google_maps" style="filter: url(#flt1)" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="24"><defs><filter id="flt1"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.871 0 0 0 0 0.871 0 0 0 0 0.871 0 0 0 1 0"/></filter><image id="img1" width="15" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAYCAYAAAAlBadpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA60lEQVQ4jZWUURGDMAyGP3Z7rwQkTEInYQ6QgAQkbA6Qwk0BEpgDJGQPa7kuJFzpXV7SfPlDkoKIkA1ogRFYAClsAroyVkQowU4Blk1A+IMrwWxzTpBLrQWzjRkejcslVROde0mirAYYVCN7A+4xnLuupgR6AsOF/fkYPtNvwQ/taJomAHcr43RUOhD4jUfHRPBnPKfEuqECLHlUwQk4sr7csOEEuJI3rPiuWvXBehg16puqhmt2/Gk+yZTA2+Ntn4/gI/XR/RlUqLc18K1G1YRTAr2ytzNwLMDJinFhpR69mCv+eQGIyNsL+AIpSOyvg7ry+AAAAABJRU5ErkJggg=="/></defs><use id="glyphicons_242_google_maps" filter="url(#flt1)" href="#img1"/></svg>
