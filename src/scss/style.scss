@@ -1,103 +1,111 @@
-.masteralb-body {
-  font-family: 'Titillium Web', sans-serif;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-logo {
-  max-width: 90%;
-  margin: 40px auto;
-  opacity: .4;
-
-  &--small {
-    opacity: .2;
-  }
-
-  @include media('≥tablet') {
-    max-width: 100%;
-  }
-
-  &__wrapper {
-    margin: 0 auto 50px auto;
-
-    @include media('≥tablet') {
-      margin: 0 auto;
-    }
-  }
-}
-
-.forms-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 27px;
-  margin-top: 50px;
-
-  @include media('≥tablet') {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.form {
+.malb {
   $root: &;
+  
+  background-image: url('../src/images/backgrounds/main-background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  margin: 27px;
-  margin-bottom: 50px;
-  position: relative;
-  background-color: $colorWhite;
-  padding: 18px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: #f4f4f4;
-  height: max-content;
-
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(113, 109, 109, 0.5);
-    border: 15px solid rgba(113, 109, 109, 0);
+  &__body {
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  &__main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__main-logo {
+    max-width: 90%;
+    margin: 40px auto;
+    opacity: .4;
+  
+    &--small {
+      opacity: .2;
+    }
+  
+    @include media('≥tablet') {
+      max-width: 100%;
+    }
+  
+    &__wrapper {
+      margin: 0 auto 50px auto;
+  
+      @include media('≥tablet') {
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  &__forms-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 27px;
+    margin-top: 50px;
+  
+    @include media('≥tablet') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  &__form {
+    margin: 27px;
+    margin-bottom: 50px;
+    position: relative;
+    background-color: $colorWhite;
+    padding: 18px;
     border-radius: 5px;
-    top: -15px;
-    left: -15px;
-    z-index: -1;
-  }
-
-  &--register {
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-  &--send-email {
-    grid-row-start: 3;
-    grid-row-end: 5;
-
-    @include media('≥tablet') {
-      margin-top: -27px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #f4f4f4;
+    height: max-content;
+  
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(113, 109, 109, 0.5);
+      border: 15px solid rgba(113, 109, 109, 0);
+      border-radius: 5px;
+      top: -15px;
+      left: -15px;
+      z-index: -1;
+    }
+  
+    &--register {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  
+    &--send-email {
+      grid-row-start: 3;
+      grid-row-end: 5;
+  
+      @include media('≥tablet') {
+        margin-top: -27px;
+      }
+    }
+  
+    &--subscribe {
+      @include media('≥tablet') {
+        align-self: flex-end;
+      }
+    }
+  
+    &--recover {
+      @include media('≥tablet') {
+        margin: 50px 27px 0 27px;
+      }
     }
   }
 
-  &--subscribe {
-    @include media('≥tablet') {
-      align-self: flex-end;
-    }
-  }
-
-  &--recover {
-    @include media('≥tablet') {
-      margin: 50px 27px 0 27px;
-    }
-  }
-
-  &__title {
+  &__form-title {
     color: $colorWhite;
     font-size: 32px;
     text-shadow: 1px 1.732px 2px rgba(43, 1, 0, 0.75);
@@ -108,7 +116,7 @@
     width: 100%;
   }
 
-  &__input-wrapper {
+  &__form-input-wrapper {
     position: relative;
     width: 100%;
     height: 40px;
@@ -120,7 +128,7 @@
     background-color: #f8f8f8;
   }
 
-  &__icon {
+  &__form-icon {
     width: 60px;
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -149,7 +157,7 @@
     }
   }
 
-  &__input, &__select {
+  &__form-input, &__form-select {
     background-color: transparent;
     border: none;
     width: calc(100% - 60px);
@@ -159,17 +167,17 @@
     padding-left: 9px;
   }
 
-  &__input::placeholder {
+  &__form-input::placeholder {
     font-size: 16px;
     color: $colorSilverChalice;
     font-weight: 300;
   }
 
-  &__button-wrapper {
+  &__form-button-wrapper {
     display: flex;
   }
 
-  &__button {
+  &__form-button {
     height: 48px;
     border-radius: 3px;
     cursor: pointer;
@@ -196,7 +204,7 @@
     }
   }
 
-  &__checkbox-label {
+  &__form-checkbox-label {
     font-size: 17px;
     color: $colorSilverChalice;
     margin-bottom: 16px;
@@ -204,7 +212,7 @@
     align-items: center;
   }
 
-  &__checkbox-badge {
+  &__form-checkbox-badge {
     opacity: 0;
     position: absolute;
     width: 23px;
@@ -212,7 +220,7 @@
     z-index: 1;
   }
 
-  &__checkbox-indicator {
+  &__form-checkbox-indicator {
     width: 23px;
     height: 23px;
     border: 1px solid #c6c6c6;
@@ -226,21 +234,21 @@
       border-radius: 3px;
       transform: translateY(35%) translateX(35%);
 
-      #{$root}__checkbox-badge:checked + & {
+      #{$root}__form-checkbox-badge:checked + & {
         background-color: #90ca6d;
       }
     }
   }
 
-  &__checkbox-label-text {
+  &__form-checkbox-label-text {
     margin-left: 10px;
   }
 
-  &__textarea-wrapper {
+  &__form-textarea-wrapper {
     display: flex;
   }
 
-  &__textarea {
+  &__form-textarea {
     resize: none;
     height: 230px;
     border: 1px solid #c6c6c6;
@@ -255,9 +263,11 @@
     width: 100%;
   }
 
-  &__textarea::placeholder {
+  &__form-textarea::placeholder {
     font-size: 16px;
     color: $colorSilverChalice;
     font-weight: 300;
   }
 }
+
+
