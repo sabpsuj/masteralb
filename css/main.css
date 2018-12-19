@@ -123,6 +123,7 @@
   .form__button {
     height: 48px;
     border-radius: 3px;
+    cursor: pointer;
     text-shadow: 0.5px 0.866px 0px rgba(43, 1, 0, 0.75);
     background: linear-gradient(#93d02b, #3b9a00);
     border: 1px solid #3b9a00;
@@ -176,7 +177,10 @@
     border-radius: 3px;
     box-shadow: 1px 1.732px 0px rgba(174, 164, 164, 0.24);
     background-color: #f8f8f8;
-    padding: 9px; }
+    padding: 9px;
+    font-size: 16px;
+    color: #afafaf;
+    font-weight: 300; }
   .form__textarea::placeholder {
     font-size: 16px;
     color: #afafaf;
