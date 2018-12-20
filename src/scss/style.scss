@@ -202,10 +202,14 @@
     background: linear-gradient($colorAtlantis, $colorLimeade);
     border: 1px solid $colorLimeade;
     box-shadow: 0.5px 0.866px 0px $colorWhite;
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'Titillium Web', sans-serif;
     color: $colorWhite;
     width: 100%;
+
+    @include media('≥tablet') {
+      font-size: 24px;
+    }
 
     &--alt {
       box-shadow: 0.5px 0.866px 0px #ffffff;
