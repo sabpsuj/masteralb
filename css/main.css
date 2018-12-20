@@ -170,7 +170,7 @@
       height: 13px;
       border-radius: 3px;
       transform: translateY(35%) translateX(35%); }
-      .malb__form-checkbox-badge:checked + .malb-form-checkbox-indicator:before {
+      .malb-form-checkbox-badge:checked + .malb-form-checkbox-indicator:before {
         background-color: #90ca6d; }
   .malb-form-checkbox-label-text {
     margin-left: 10px; }
@@ -198,13 +198,27 @@
     box-shadow: 1px 1.732px 0px rgba(174, 164, 164, 0.24);
     background-color: #f8f8f8;
     border: 1px solid #c6c6c6;
-    opacity: .9;
+    bottom: 100%;
     position: absolute;
-    padding: 20px 15px;
+    padding: 15px;
     text-align: center;
     width: 50%;
-    z-index: 10; }
-    .malb__form-icon:hover .malb-form-icon-tooltip {
+    z-index: 10;
+    border-bottom-left-radius: 4px; }
+    .malb-form-icon-tooltip:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 100%;
+      left: 0;
+      background-color: #f8f8f8;
+      border: 1px solid #c6c6c6;
+      border-left: 0;
+      border-top: 0;
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg) translateY(-50%) translateX(-18%); }
+    .malb-form-icon:hover .malb-form-icon-tooltip {
       display: block; }
   .malb-form-icon-tooltip {
     color: #8ac766; }
