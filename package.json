@@ -4,7 +4,6 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "jshint": "^2.9.7",
     "run-sequence": "^2.2.1"
   },
   "devDependencies": {
@@ -12,6 +11,7 @@
     "gulp-jshint": "^2.1.0",
     "gulp-sass": "^4.0.2",
     "include-media": "^1.4.9",
+    "jshint": "^2.10.1",
     "node-sass": "^4.11.0"
   },
   "scripts": {
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/sabpsuj/masteralb/issues"
   },
-  "homepage": "https://github.com/sabpsuj/masteralb#readme"
+  "homepage": "https://github.com/sabpsuj/masteralb/src/index.html"
 }

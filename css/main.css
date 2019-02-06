@@ -139,7 +139,7 @@
     width: 100%; }
     @media (min-width: 768px) {
       .malb-form-button {
-        font-size: 24px; } }
+        font-size: 22px; } }
     .malb-form-button--alt {
       box-shadow: 0.5px 0.866px 0px #ffffff;
       background: linear-gradient(#f4495b, #a2202a);
@@ -272,3 +272,11 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.errorBox {
+  display: inline-block;
+  font-size: 10px;
+  color: red;
+  bottom: -12px;
+  left: 0;
+  position: absolute; }
