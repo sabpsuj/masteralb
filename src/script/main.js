@@ -1,3 +1,3 @@
-import InputValidation from 'input.js';
+import Input from './input';
 
-new InputValidation();
+new Input();
