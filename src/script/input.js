@@ -6,6 +6,7 @@ class Input {
     this.buttonClass = 'malb-form-button';
     this.buttonAltCLass = `${this.buttonClass}--alt`;
     this.textArea = 'malb-form-textarea';
+
     this.validEmail = false;
     this.validPhone = false;
     this.validUser = false;
@@ -13,6 +14,7 @@ class Input {
     this.validPassword = false;
     this.validSelect = false;
     this.isChecked = false;
+
     this.init();
   }
 
@@ -137,7 +139,7 @@ class Input {
     let confirmPassword = document.querySelector('.malb-form-input--password-confirm');
     let isValidPass = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/.test(password.value);
 
-    if(!isValidPass || password.value === '' || password.value.length < 6 || confirmPassword.value && password.value !== confirmPassword.value) {
+    if(!isValidPass || password.value === '' || password.value.length < 6 || password.value != confirmPassword.value) {
       password.parentElement.classList.add('error');
     } else {
       if(password.parentElement.classList.contains('error')) {
@@ -170,6 +172,5 @@ class Input {
   }
 
 }
-
 
 export default Input;
