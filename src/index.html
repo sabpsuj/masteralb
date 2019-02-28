@@ -11,7 +11,7 @@
   <main class="malb-main-container">
     <img class="malb-main-logo" src="../src/images/masteralb-logo.png" alt="masteralb">
     <div class="malb-forms-container">
-      <form class="malb-form malb-form--register" action="">
+      <form class="malb-form malb-form--register" action="" novalidate>
         <fieldset>
           <legend class="malb-form-title">Register Form</legend>
           <div class="malb-form-input-wrapper">
@@ -32,7 +32,7 @@
                 </p>
               </div>
             </div>
-            <input class="malb-form-input malb-form-input--password" type="password" placeholder="Password">
+            <input class="malb-form-input malb-form-input--password malb-form-input--password-confirm" type="password" placeholder="Password" >
           </div>
           <div class="malb-form-input-wrapper">
             <div class="malb-form-icon malb-form-icon--password">
@@ -77,7 +77,7 @@
             <span class="malb-form-checkbox-indicator"></span>
             <span class="malb-form-checkbox-label-text" for="scales">I have read and accept the terms of use</span>
           </label>
-          <button class="malb-form-button">Sign up</button>
+          <button class="malb-form-button" type="submit">Sign up</button>
         </fieldset>
       </form>
       <form class="malb-form malb-form--sign-in" action="">
@@ -108,7 +108,7 @@
               <span class="malb-form-checkbox-indicator"></span>
               <span class="malb-form-checkbox-label-text" for="scales">Remember me</span>
           </label>
-          <button class="malb-form-button">Sign In</button>
+          <button class="malb-form-button" type="submit">Sign In</button>
         </fieldset>
       </form>
       <form class="malb-form malb-form--send-email" action="">
@@ -142,7 +142,7 @@
               <span class="malb-form-checkbox-indicator"></span>
               <span class="malb-form-checkbox-label-text" for="scales">Send copy to my email</span>
           </label>
-          <button class="malb-form-button">Send Email</button>
+          <button class="malb-form-button" type="submit">Send Email</button>
         </fieldset>
       </form>
       <form class="malb-form malb-form--recover" action="">
@@ -169,7 +169,7 @@
             <input class="malb-form-input malb-form-input--phone" type="text" placeholder="Enter your Phone number">
           </div>
           <div class="malb-form-button-wrapper">
-            <button class="malb-form-button">Send</button>
+            <button class="malb-form-button" type="submit">Send</button>
             <button class="malb-form-button malb-form-button--disable">Done</button>
           </div>
         </fieldset>
@@ -188,7 +188,7 @@
             <input class="malb-form-input malb-form-input--email" type="text" placeholder="Enter your Email">
           </div>
           <div class="malb-form-button-wrapper">
-            <button class="malb-form-button">Subscribe</button>
+            <button class="malb-form-button" type="submit">Subscribe</button>
             <button class="malb-form-button malb-form-button--alt">No, thanks</button>
           </div>
         </fieldset>

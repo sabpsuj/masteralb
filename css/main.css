@@ -273,10 +273,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.errorBox {
-  display: inline-block;
-  font-size: 10px;
-  color: red;
-  bottom: -12px;
-  left: 0;
-  position: absolute; }
+  .error {
+    border: 1px solid red;
+    background-color: rgb(228, 181, 181);}
