@@ -65,6 +65,11 @@ class Input {
 
           if(this.validUser && this.validEmail && this.validPassword && this.validSelect && this.isChecked) {
             setTimeout(() => alert(`Thank you. You have registered successfully. Have a good day!`), 1000);
+            this.validUser = false;
+            this.validEmail = false;
+            this.validPassword = false;
+            this.validSelect = false;
+            this.isChecked = false;
           }
        }
 
@@ -74,24 +79,32 @@ class Input {
 
         if(this.validUser && this.validEmail && this.validMessage) {
           setTimeout(() => alert(`Thank you. You have send us a message successfully. Have a good day!`), 1000);
+          this.validUser = false;
+          this.validEmail = false;
+          this.validMessage = false;
         }
       }
 
         if(closestForm.classList.contains('malb-form--sign-in')) {
           if(this.validUser && this.validPassword) {
             setTimeout(() => alert(`Yay! You have signed in!`), 1000);
+            this.validUser = false;
+            this.validPassword = false;
           }
         }
 
         if(closestForm.classList.contains('malb-form--recover')) {
-          if(this.validEmail) {
+          if(this.validEmail && this.validPhone) {
             setTimeout(() => alert(`You have just send us the recovery form info. Please wait until you receive an e-mail or SMS message.`), 1000);
+            this.validEmail = false;
+            this.validPhone = false;
           }
         }
 
         if(closestForm.classList.contains('malb-form--subscribe')) {
           if(this.validEmail) {
             setTimeout(() => alert(`Your e-mail is now on our subscription list. Thank you and have a good day!`), 1000);
+            this.validEmail = false;
           }
         }
 
