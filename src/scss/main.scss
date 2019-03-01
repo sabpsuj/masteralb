@@ -1,14 +1,13 @@
 //NPM packages
 @import '../../../masteralb/node_modules/include-media/dist/include-media';
 
-@import 'colors';
+//Settings
+@import 'reset.scss';
+@import 'breakpoints.scss';
+@import 'functions.scss';
+@import 'colors.scss';
 
 //Base file
-@import 'style';
+@import 'style.scss';
 
-//Settings
-@import 'reset';
-@import 'breakpoints';
-@import 'functions';
-@import 'scriptstyle';
 

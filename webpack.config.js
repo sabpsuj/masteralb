@@ -1,3 +1,5 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
   entry: "./src/script/main.js",
   output: {
@@ -5,20 +7,38 @@ module.exports = {
   },
   watch: true,
   devtool: "source-map",
-  loader: {
-    options: [
+  module: {
+    rules: [
       {
-        test: /\.js$/,
-        exclude: /node-modules/,
-        use: 'babel-loader',
-        query: {
-          presets: ['es2015']
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
         }
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }
+        use: [
+            MiniCssExtractPlugin.loader,
+            {
+                loader: 'css-loader',
+                options: {
+                    url: false
+                },
+            },
+            {
+                loader: 'sass-loader'
+            }
+        ],
+      },
     ]
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+        filename: 'main.css'
+    }),
+],
 }

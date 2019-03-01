@@ -27,21 +27,21 @@
       opacity: .2;
     }
   
-    @include media('≥tablet') {
+    @include media('>=tablet') {
       max-width: 100%;
     }
   
     &__wrapper {
       margin: 0 auto 50px auto;
   
-      @include media('≥tablet') {
+      @include media('>=tablet') {
         margin: 0 auto;
       }
     }
   }
 
   &-grid-img {
-    @include media('≥tablet') {
+    @include media('>=tablet') {
      grid-area: img; 
     }
   }
@@ -53,7 +53,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
   
-    @include media('≥tablet') {
+    @include media('>=tablet') {
        grid-template: "register-f signin-f"
                  "register-f ."
                  "register-f recover-f"
@@ -92,31 +92,31 @@
     }
   
     &--register {
-      @include media('≥tablet') {
+      @include media('>=tablet') {
         grid-area: register-f;
       }      
     }
   
     &--send-email {
-      @include media('≥tablet') {
+      @include media('>=tablet') {
         grid-area: send-f;
       }
     }
   
     &--sign-in {
-      @include media('≥tablet') {
+      @include media('>=tablet') {
         grid-area: signin-f;
       }
     }
 
     &--subscribe {
-      @include media('≥tablet') {
+      @include media('>=tablet') {
         grid-area: sub-f;
       }
     }
   
     &--recover {
-      @include media('≥tablet') {
+      @include media('>=tablet') {
         grid-area: recover-f;
       }
     }
@@ -207,7 +207,7 @@
     color: $colorWhite;
     width: 100%;
 
-    @include media('≥tablet') {
+    @include media('>=tablet') {
       font-size: 22px;
     }
 
@@ -330,4 +330,7 @@
   }
 }
 
-
+.error {
+  border: 1px solid red;
+  background-color: rgb(228, 181, 181);
+}
